@@ -1,0 +1,169 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "gb5001340155",
+      "name": "CALLAWAY CHROME TOUR 2024 WHITE GOLF BALLS (12 Golf Balls)",
+      "description": "Chrome Tour is engineered for outstanding performance with exceptional speed, consistent flight, incredible spin, and greenside control.",
+      "price": 54.95,
+      "category": 2,
+      "rating": 4.4,
+      "image_url": "",
+      "image": "Callaway_Chrome_Tour_box.webp"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "CALLAWAY CHROME SOFT 2024 WHITE GOLF BALLS (12 Golf Balls)",
+      "description": "Exceptionally Fast Ball Speeds.",
+      "price": 54.95,
+      "category":2,
+      "rating": 4.8,
+      "image_url": "",
+      "image": "Callaway_Chrome_soft_box.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "LAKE GOLF BALLS MIXED GRADE B (20 Golf Balls)",
+      "description": "Mixed Bag of Grade B Lake Golf Ball - 20 Ball Pack",
+      "price": 9.99,
+      "category": 3,
+      "rating": 2.2,
+      "image_url": "",
+      "image": "Lake_Golf_mixed_20.webp"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "LAKE GOLF BALLS TITLEIST PRO V1 GRADE B (10 Golf Balls)",
+      "description": "Finest Irish Lakeballs - All the bad luck has been taken out of them!.Superior quality",
+      "price": 15.00,
+      "category": 3,
+      "rating": 3.5,
+      "image_url": "",
+      "image": "Lake_Golf_ProV1_10.webp"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730011",
+      "name": "MASTERS LITE FLITE FOAM PRACTICE BALLS (1 Golf Ball)",
+      "description": "This practice ball mimics the flight of a standard golf ball but is made from a very soft compound and is safe for use in all confined areas.",
+      "price": 8.90,
+      "category": 4,
+      "rating": 2.5,
+      "image_url": "",
+      "image": "Masters_Lite_Foam_Practice_1.webp"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730012",
+      "name": "PURE 2 IMPROVE GOLF IMPACT BALLS (PACK OF 12)",
+      "description": "The Impact Balls are a great alternative to plastic training golf balls.",
+      "price": 13.99,
+      "category": 4,
+      "rating": 3.1,
+      "image_url": "",
+      "image": "Pure_2_Practice_12.webp"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730013",
+      "name": "SRIXON DISTANCE GOLF BALLS (12 Golf Balls)",
+      "description": "These premium distance golf balls feature a higher initial velocity, a softer compression compared to the previous model and a penetrating ball flight to provide optimum distance with responsive soft feel",
+      "price": 16.95,
+      "category": 2,
+      "rating": 4.2,
+      "image_url": "",
+      "image": "Srixon_Distance_box.webp"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730014",
+      "name": "SRIXON ZSTAR XV WHITE GOLF BALLS (12 Golf Balls)",
+      "description": "Enhanced Ball Speed For Maximum Distance",
+      "price": 45.95,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "Srixon_Z-star_XV_box.webp"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730015",
+      "name": "TAYLORMADE TM22 TOUR RESPONSE GOLF BALLS WHITE (12 Golf Balls)",
+      "description": "A soft, cast urethane cover is designed to increase green-side spin. A crosslinking chemical reaction forms the urethane material, which creates an irreversible link for improved shear resistance and greater durability.",
+      "price": 40.95,
+      "category": 2,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "TaylorMade_Response_box.webp"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730016",
+      "name": "TAYLORMADE 2024 TP5 - WHITE (12 Golf Balls)",
+      "description": "Enhanced Ball Speed For Maximum Distance",
+      "price": 51.95,
+      "category": 2,
+      "rating": 4.8,
+      "image_url": "",
+      "image": "TaylorMade_TP5_box.webp"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730017",
+      "name": "TITLEIST PRO V1 GOLF BALLS WHITE 2023 (12 Golf Balls)",
+      "description": "#1 Ball on Worldwide Tours.For golfers who prioritise total performance.",
+      "price": 55.95,
+      "category": 2,
+      "rating": 5.0,
+      "image_url": "",
+      "image": "Titleist_ProV1_box.webp"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730018",
+      "name": "TITLEIST TRUFEEL GOLF BALLS (12 Golf Balls)",
+      "description": "The softest Titleist® with best-in-class quality and consistency. ",
+      "price": 24.95,
+      "category": 2,
+      "rating": 4.2,
+      "image_url": "",
+      "image": "Titleist_TruFeel_box.webp"
+    }
+  }]
