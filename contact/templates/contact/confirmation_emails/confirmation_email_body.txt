@@ -1,0 +1,11 @@
+Hello {{ cust_name }}!
+
+We have received the below enquiry:
+
+{{ message }}
+
+We will get back to you as soon as we can
+
+Sincerely,
+
+Fairway Finds

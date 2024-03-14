@@ -1,0 +1,1 @@
+Fairway Finds Confirmation for Enquiry re: {{ subject }}
