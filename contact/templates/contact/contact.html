@@ -30,8 +30,8 @@
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark border-black rounded-0">Submit</button>
-                <a class="btn btn btn-outline-dark border-black rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
+                <button type="submit" class="btn btn-black rounded-0 text-uppercase">Submit</button>
+                <a class="btn btn-white btn-outline-dark border-black rounded-0 m-2 text-uppercase" href="{%  url 'home' %}">Cancel</a>
             </form>
         </div>
     </div>
