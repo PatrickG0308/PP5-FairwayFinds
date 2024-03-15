@@ -3,11 +3,15 @@ html {
 }
 
 body {
-    background: url('/media/homepage.jpg') no-repeat center center fixed;
+    background: url('/media/homepage2.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+.contact-container {
+    background: none;
 }
 
 /* from Bulma */
@@ -173,6 +177,57 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* footer */
+
+footer {
+    background-color: #343434;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+    color: white;
+}
+
+.divider {
+    border-left: 1px solid rgba(245, 246, 245, 0.2);
+    border-right: 1px solid rgba(245, 246, 245, 0.2);
+}
+
+.member-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.member-logo:hover {
+    opacity: 80%;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding-right: 20px;
+}
+
+.social-networks i:hover {
+    opacity: 80%;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
 
 /* -------------------------------- Media Queries */
 

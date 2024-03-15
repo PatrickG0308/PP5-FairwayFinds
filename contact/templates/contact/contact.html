@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+{% endblock %}
+
 {% block extra_title %}Fairway Finds | Enquiry{% endblock %}
 
 {% block page_header %}
@@ -14,10 +18,10 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="container pb-5">
+<div class="contact-container pb-5">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center pt-4">Make an Enquiry</h1>
+            <h1 class="text-center pt-4"><strong>Make an Enquiry</strong></h1>
         </div>
     </div>
     <br>
@@ -26,8 +30,8 @@
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Submit</button>
-                <a class="btn btn btn-outline-dark border-gold rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
+                <button type="submit" class="btn btn-outline-dark border-black rounded-0">Submit</button>
+                <a class="btn btn btn-outline-dark border-black rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
             </form>
         </div>
     </div>
