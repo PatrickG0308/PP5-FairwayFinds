@@ -3,11 +3,9 @@ html {
 }
 
 body {
-    background: url('/media/noimage.png') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    
 }
 
 .contact-container {
@@ -15,6 +13,7 @@ body {
 }
 
 /* from Bulma */
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -437,12 +436,25 @@ input[name='q']::placeholder {
     }
 }
 
+/* Sign-Up Footer */
 
+.signup,
+.login,
+.logout,
+.product-details-container,
+.edit_product,
+.products {
+    margin-bottom: 250px;
+}
+
+footer #products {
+    display: none;
+}
 
 /* footer */
 
 footer {
-    background-color: #343434;
+    background-color: black;
     color: white;
 
 }
