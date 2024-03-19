@@ -19,7 +19,7 @@
         </div>
         <div class="col-12">
             <div class="pt-3 text-center">
-                <a href="{% url 'add_feedback' %}" class="btn btn-sm black-button py-2" aria-label="add-feedback">
+                <a href="{% url 'add_feedback' %}" class="btn btn-black rounded-0" aria-label="add-feedback">
                     Add Feedback
                 </a>
             </div>
@@ -44,7 +44,7 @@
                     {% if user.is_authenticated and feedback.name == user or user.is_superuser %}
                     <span class="align-self-end">
                         <small class="edit-delete-btns ">
-                            <a href="{% url 'edit_feedback' feedback.id %}">Edit</a> |
+                            <a href="{% url 'edit_feedback' feedback.id %}" >Edit</a> |
                             <a href="{% url 'delete_feedback' feedback.id %}">Delete</a>
                         </small>
                     </span>
@@ -55,7 +55,7 @@
         </div>
     </div>
 </div>
-<div class="btt-button shadow-sm rounded-0 border-gold">
+<div class="btt-button shadow-sm rounded-0 border-black">
     <div class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-jet mx-auto my-auto"></i>
     </div>

@@ -14,7 +14,7 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="container">
+<div class="container del-feedback">
     <div class="row">
         <div class="col-12">
             <h1 class="text-center pt-4">Delete Feedback</h1>
@@ -27,8 +27,8 @@
             <form class="text-center" method="POST">
                 {%  csrf_token  %}
                 <div>
-                    <button class="btn btn-outline-dark border-gold rounded-0 m-2" type="submit">Delete</button>
-                    <a class="btn btn-outline-dark border-gold rounded-0 m-2"
+                    <button class="btn btn-outline-dark border-black rounded-0 m-2" type="submit">Delete</button>
+                    <a class="btn btn-outline-dark border-black rounded-0 m-2"
                         href="{%  url 'feedback' %}">Cancel</a>
                 </div>
             </form>

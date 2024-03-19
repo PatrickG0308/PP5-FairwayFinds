@@ -436,7 +436,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* Sign-Up Footer */
+/* footer */
 
 .signup,
 .login,
@@ -447,15 +447,10 @@ input[name='q']::placeholder {
 .email_confirm,
 .verify,
 .verify_sent,
-.feedback {
-    margin-bottom: 250px;
+.feedback,
+.del-feedback {
+    margin-bottom: 300px;
 }
-
-footer #products {
-    display: none;
-}
-
-/* footer */
 
 footer {
     background-color: black;
