@@ -4,10 +4,7 @@ from .models import Feedback
 class FeedbackForm(forms.ModelForm):
     class Meta:
         model = Feedback
-        fields = [
-            'body',
-            
-         ]
+        fields = ['body']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

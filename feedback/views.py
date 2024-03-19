@@ -5,8 +5,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Feedback
 from django.urls import reverse_lazy
 from .forms import FeedbackForm
+from django.shortcuts import get_object_or_404
 
-class Feedback(generic.ListView):
+class FeedbackList(generic.ListView):
     """ This view is used to display all feedback """
     model = Feedback
     template_name = 'feedback/feedback.html'
@@ -35,8 +36,8 @@ class AddFeedback(
 
 
 class EditFeedback(
-        LoginRequiredMixin, UserPassesTestMixin,
-        SuccessMessageMixin, generic.UpdateView):
+         generic.UpdateView, LoginRequiredMixin,
+         UserPassesTestMixin,SuccessMessageMixin):
 
     """
     This view is used to allow logged in users to edit their own feedback
@@ -46,12 +47,20 @@ class EditFeedback(
     template_name = 'feedback/edit_feedback.html'
     success_message = "Feedback edited successfully"
 
+    def get_context_data(self, **kwargs):
+         context = super().get_context_data(**kwargs)
+         context['feedback'] = self.get_object()
+         return context
+
+
     def test_func(self):
         """
         Prevent another user from editing user's feedback
         """
         feedback = self.get_object()
+        print(feedback)
         return feedback.name == self.request.user or self.request.user.is_superuser
+
 
 
 class DeleteFeedback(
@@ -68,8 +77,9 @@ class DeleteFeedback(
         """
         Prevent another user from deleting another user's feedback
         """
-        feedback= self.get_object()
-        return feedback.name == self.request.user or self.request.user.is_superuser
+        feedback = self.get_object()
+        return feedback.name == self.request.user\
+            or self.request.user.is_superuser
 
     def delete(self, request, *args, **kwargs):
         """

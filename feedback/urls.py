@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.Feedback.as_view(), name='feedback'),
+    path('', views.FeedbackList.as_view(), name='feedback'),
     path(
         'feedback/add/', views.AddFeedback.as_view(),
         name='add_feedback'

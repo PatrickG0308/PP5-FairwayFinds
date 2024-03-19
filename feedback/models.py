@@ -4,8 +4,7 @@ from django.contrib.auth.models import User
 
 class Feedback (models.Model):
     """Model for Feedback"""
-    name = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="feedback")
+    name = models.ForeignKey(User, on_delete=models.CASCADE, related_name="feedback")
     body = models.TextField()
     created_on = models.DateTimeField(auto_now=True)
 
