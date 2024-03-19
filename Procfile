@@ -1,1 +1,1 @@
-web: gunicorn fairwayfinds.wsgi:application
+web: gunicorn fairwayfinds.wsgi.application
