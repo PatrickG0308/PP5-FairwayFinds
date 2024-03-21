@@ -21,7 +21,7 @@ class ContactUs(View):
         Renders the contact form
         """
         if request.user.is_authenticated:
-            form = ContactForm(initial={'email': request.user.email})
+            form = ContactForm(initial={"email": request.user.email})
         else:
             form = ContactForm()
 
@@ -45,37 +45,39 @@ class ContactUs(View):
             cust_email = contact_form.instance.email
             subject = contact_form.instance.enquiry_type
             subject = render_to_string(
-                'contact/confirmation_emails/confirmation_email_subject.txt',
-                {'subject': subject})
+                "contact/confirmation_emails/confirmation_email_subject.txt",
+                {"subject": subject},
+            )
             message = contact_form.instance.message
             message = render_to_string(
-                'contact/confirmation_emails/confirmation_email_body.txt',
-                {'cust_name': cust_name, 'message': message}
+                "contact/confirmation_emails/confirmation_email_body.txt",
+                {"cust_name": cust_name, "message": message},
             )
 
             contact_form.save()
-            messages.success(request, 'Your enquiry has been sent')
+            messages.success(request, "Your enquiry has been sent")
 
             target = "home/index.html"
             context = {"plain_message": True}
 
         else:
-            messages.error(request, """Form failed. Please ensure the
-            form is valid """)
+            messages.error(
+                request,
+                """Form failed. Please ensure the
+            form is valid """,
+            )
 
             target = "contact/contact.html"
-            context = {
-                "plain_message": True,
-                "contact_form": contact_form
-            }
+            context = {"plain_message": True, "contact_form": contact_form}
 
         return render(request, target, context)
 
 
 class Enquiries(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
-    """ This view is used to display all enquiries """
+    """This view is used to display all enquiries"""
+
     model = Contact
-    template_name = 'contact/enquiries_dashboard.html'
+    template_name = "contact/enquiries_dashboard.html"
 
     def test_func(self):
         """
@@ -88,14 +90,15 @@ class Enquiries(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
         ensures success message doesn't include bag items
         """
         context = super().get_context_data(**kwargs)
-        context['plain_message'] = True
+        context["plain_message"] = True
         return context
 
 
 class EnquiryDetail(LoginRequiredMixin, UserPassesTestMixin, generic.DetailView):
-    """ This view is used to display selected enquiry detail """
+    """This view is used to display selected enquiry detail"""
+
     model = Contact
-    template_name = 'contact/enquiry_detail.html'
+    template_name = "contact/enquiry_detail.html"
 
     def test_func(self):
         """
@@ -108,14 +111,15 @@ class DeleteEnquiry(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView)
     """
     This view is used to allow the superuser to delete an enquiry
     """
+
     model = Contact
-    template_name = 'contact/delete_enquiry.html'
+    template_name = "contact/delete_enquiry.html"
     success_message = "Enquiry deleted successfully"
-    success_url = reverse_lazy('enquiries')
+    success_url = reverse_lazy("enquiries")
 
     def test_func(self):
         """
-       Ensure only superuser can edit service details
+        Ensure only superuser can edit service details
         """
         return self.request.user.is_superuser
 

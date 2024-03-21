@@ -6,10 +6,11 @@ from contact.models import Contact
 
 class ContactAdmin(admin.ModelAdmin):
     """Allows admin to manage enquiries via the admin panel"""
+
     list_display = (
-        'name',
-        'email',
-        'date',
+        "name",
+        "email",
+        "date",
     )
 
 

@@ -5,7 +5,6 @@ html {
 body {
     color: #555;
     font-family: 'Lato';
-   
 }
 
 .home {
@@ -445,7 +444,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* footer */
+/*--- footer --*/
 
 .signup,
 .login,
@@ -457,14 +456,24 @@ input[name='q']::placeholder {
 .verify,
 .verify_sent,
 .feedback,
-.del-feedback {
+.del-feedback,
+.bag {
     margin-bottom: 300px;
 }
 
-footer {
-    background-color: black;
-    color: white;
+.password {
+    margin-bottom: 50px;
+}
 
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black; 
+    color: #fff;
+    padding: 10px 0; 
+    text-align: center; 
+    margin-top: auto;    
 }
 
 footer a {
@@ -505,11 +514,6 @@ footer a:hover {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
 }
-
-
-
-
-
 
 /* -------------------------------- Media Queries */
 

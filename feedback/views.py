@@ -7,23 +7,24 @@ from django.urls import reverse_lazy
 from .forms import FeedbackForm
 from django.shortcuts import get_object_or_404
 
+
 class FeedbackList(generic.ListView):
-    """ This view is used to display all feedback """
+    """This view is used to display all feedback"""
+
     model = Feedback
-    template_name = 'feedback/feedback.html'
+    template_name = "feedback/feedback.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['plain_message'] = True
+        context["plain_message"] = True
         return context
 
 
-class AddFeedback(
-        LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
-
+class AddFeedback(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
     """This view is used to allow a user to add a feedback"""
+
     form_class = FeedbackForm
-    template_name = 'feedback/add_feedback.html'
+    template_name = "feedback/add_feedback.html"
     success_message = "Your feedback was added successfully"
 
     def form_valid(self, form):
@@ -36,22 +37,21 @@ class AddFeedback(
 
 
 class EditFeedback(
-         generic.UpdateView, LoginRequiredMixin,
-         UserPassesTestMixin,SuccessMessageMixin):
-
+    generic.UpdateView, LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin
+):
     """
     This view is used to allow logged in users to edit their own feedback
     """
+
     model = Feedback
     form_class = FeedbackForm
-    template_name = 'feedback/edit_feedback.html'
+    template_name = "feedback/edit_feedback.html"
     success_message = "Feedback edited successfully"
 
     def get_context_data(self, **kwargs):
-         context = super().get_context_data(**kwargs)
-         context['feedback'] = self.get_object()
-         return context
-
+        context = super().get_context_data(**kwargs)
+        context["feedback"] = self.get_object()
+        return context
 
     def test_func(self):
         """
@@ -62,24 +62,22 @@ class EditFeedback(
         return feedback.name == self.request.user or self.request.user.is_superuser
 
 
-
-class DeleteFeedback(
-        LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+class DeleteFeedback(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     """
     This view is used to allow logged in users to delete their own feedback
     """
+
     model = Feedback
-    template_name = 'feedback/delete_feedback.html'
+    template_name = "feedback/delete_feedback.html"
     success_message = "Feedback successfully deleted"
-    success_url = reverse_lazy('feedback')
+    success_url = reverse_lazy("feedback")
 
     def test_func(self):
         """
         Prevent another user from deleting another user's feedback
         """
         feedback = self.get_object()
-        return feedback.name == self.request.user\
-            or self.request.user.is_superuser
+        return feedback.name == self.request.user or self.request.user.is_superuser
 
     def delete(self, request, *args, **kwargs):
         """

@@ -6,13 +6,21 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('contact', '0001_initial'),
+        ("contact", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='contact',
-            name='enquiry_type',
-            field=models.CharField(choices=[('PRODUCT_QUERY', 'Product Query'), ('ORDER_QUERY', 'Order Query'), ('OTHER', 'Other')], default='PQ', max_length=254),
+            model_name="contact",
+            name="enquiry_type",
+            field=models.CharField(
+                choices=[
+                    ("PRODUCT_QUERY", "Product Query"),
+                    ("ORDER_QUERY", "Order Query"),
+                    ("OTHER", "Other"),
+                ],
+                default="PQ",
+                max_length=254,
+            ),
         ),
     ]

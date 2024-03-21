@@ -7,22 +7,41 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Contact',
+            name="Contact",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=122)),
-                ('email', models.EmailField(max_length=254)),
-                ('enquiry_type', models.CharField(choices=[('DESIGN_CONSULTATION', 'Design Consultation Enquiry'), ('PRODUCT_QUERY', 'Product Query'), ('ORDER_QUERY', 'Order Query'), ('OTHER', 'Other')], default='DS', max_length=254)),
-                ('message', models.TextField(default='', max_length=500)),
-                ('date', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=122)),
+                ("email", models.EmailField(max_length=254)),
+                (
+                    "enquiry_type",
+                    models.CharField(
+                        choices=[
+                            ("DESIGN_CONSULTATION", "Design Consultation Enquiry"),
+                            ("PRODUCT_QUERY", "Product Query"),
+                            ("ORDER_QUERY", "Order Query"),
+                            ("OTHER", "Other"),
+                        ],
+                        default="DS",
+                        max_length=254,
+                    ),
+                ),
+                ("message", models.TextField(default="", max_length=500)),
+                ("date", models.DateTimeField(auto_now_add=True)),
             ],
             options={
-                'ordering': ['-date'],
+                "ordering": ["-date"],
             },
         ),
     ]
