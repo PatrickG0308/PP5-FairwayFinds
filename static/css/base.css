@@ -446,7 +446,7 @@ input[name='q']::placeholder {
 
 /*--- footer --*/
 
-.signup,
+/*.signup,
 .login,
 .logout,
 .product-details-container,
@@ -463,7 +463,7 @@ input[name='q']::placeholder {
 
 .password {
     margin-bottom: 50px;
-}
+}*/
 
 .footer {
     position: relative;
