@@ -446,25 +446,6 @@ input[name='q']::placeholder {
 
 /*--- footer --*/
 
-/*.signup,
-.login,
-.logout,
-.product-details-container,
-.edit_product,
-.products,
-.email_confirm,
-.verify,
-.verify_sent,
-.feedback,
-.del-feedback,
-.bag {
-    margin-bottom: 300px;
-}
-
-.password {
-    margin-bottom: 50px;
-}*/
-
 .footer {
     position: relative;
     bottom: 0;
