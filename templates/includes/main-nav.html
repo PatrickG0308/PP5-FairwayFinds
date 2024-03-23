@@ -13,10 +13,9 @@
                 <a href="{% url 'products' %}?category=golf_balls" class="dropdown-item">Golf Balls</a>
                 <a href="{% url 'products' %}?category=lake_balls" class="dropdown-item ">Lake Balls</a>
                 <a href="{% url 'products' %}?category=practice_balls" class="dropdown-item ">Practice Balls</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=golf_balls,lake_balls,practice_balls" class="dropdown-item">All Products</a>
             </div>
-        </li>
-        
+        </li>        
        <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
