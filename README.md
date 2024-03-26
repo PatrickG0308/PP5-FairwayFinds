@@ -712,7 +712,6 @@ Please see a table of acronyms used throughout testing:
 |Social links open up to the correct pages|Pass|
 |Social links open up in a new tab|Pass|
 
-
 </details>
 
 ---
@@ -725,8 +724,7 @@ Please see a table of acronyms used throughout testing:
 |--|--|
 |NLI can successfully make a payment & order| Pass |
 |LIU can successfully make a payment & order| Pass|
-|All users receive an email confirmation of order on deployed site|Fail|
-|In development email confirmation is printed to terminal|Pass|
+|All users receive an email confirmation of order on deployed site|Pass|
 |If payment is successful user will be redirected to order success page|Pass|
 |If order fails due to incorrect information being submitted order will not be submitted|Pass|
 |If there is an error when processing the order the site returns a 500 error without processing order|Pass|
@@ -736,17 +734,30 @@ Please see a table of acronyms used throughout testing:
 ---
 
 <details>
-<summary>Blog Tests</summary>
+<summary>Feedback Tests</summary>
 <br>
 
 | Test |Result  |
 |--|--|
-|NLI can access blog pages| Pass |
-|NLI cannot post a comment on blog posts|Pass|
-|LIU can comment on blog posts|Pass|
-|LIU can like blog posts|Pass|
-|LIU's information shows in the comment section after they post comment|Pass|
-|LIU's correct profile image shows on the comment they made|Pass|
+|NLI cannot add feedback| Pass |
+|LIU can add feedback|Pass|
+|LIU can edit their feedback|Pass|
+|LIU can delete their feedback|Pass|
+  
+</details>
+
+<details>
+<summary>Contact Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|NLI can create enquiry| Pass |
+|LIU can create enquiry|Pass|
+|NLI cannot view enquiry|Pass|
+|LIU cannot view enquiry|Pass|
+|SUP can view enquiry|Pass|
+|SUP can delete enquiry|Pass|
   
 </details>
 
@@ -756,26 +767,56 @@ Please see a table of acronyms used throughout testing:
 
 ### Desktop
 
-> index.html
-
 <details>
   <summary>Index.html Screenshot</summary>
   <br>
 
-![Google Lighthouse Index](media/readme/lighthouse-index-updated.png)
+![Google Lighthouse Index](media/readme/lighthouse/light_home.png)
+
+</details>
+
+<details>
+  <summary>Products.html Screenshot</summary>
+  <br>
+
+  ![Google Lighthouse Products](media/readme/lighthouse/light_products.png)
   
   </details>
 
-> profile.html
-
 <details>
-  <summary>Profile.html Screenshot</summary>
+  <summary>About.html Screenshot</summary>
   <br>
   
-![Google Lighthouse Profile](media/readme/lighthouse-profiles.png)
+![Google Lighthouse About](media/readme/lighthouse/light_about.png)
   
-  </details
+  </details>
 
+<details>
+  <summary>FAQs.html Screenshot</summary>
+  <br>
+  
+![Google Lighthouse About](media/readme/lighthouse/light_faqs.png)
+  
+  </details>
+
+<details>
+  <summary>Feedback.html Screenshot</summary>
+  <br>
+  
+![Google Lighthouse Feedback](media/readme/lighthouse/light_feedback.png)
+  
+  </details>
+
+<details>
+  <summary>Contact.html Screenshot</summary>
+  <br>
+  
+![Google Lighthouse Feedback](media/readme/lighthouse/light_contact.png)
+  
+  </details>
+
+
+  
 ## HTML W3 Validation
 
 ### index.html
