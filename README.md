@@ -72,7 +72,7 @@ This was the suspected preproject planning database structure. As the project wa
 
 #### Business Overview
 
-The business is a B2C e-commerce platform whose goal is to provide tangible products to it's customers through an online store.
+The business is a B2C e-commerce platform whose goal is to provide quality products to it's customers through an online store.
 
 The types of products would be premium golf balls for the discerning golfer at very reasonable prices, and discounted second hand balls
 also know as lake balls and practice balls for continuous use.
@@ -92,12 +92,12 @@ The cons of this business model are:
 1. Getting customers initally can be difficult due to saturation in certain industrys
 2. Establishing a brand from the ground up takes time and immediate results are unlikely without a sound marketing strategy.
 3. Getting customers organically takes time so the business would need to manually market the business or use paid advertising.
-4. Not having a physical business can make it harder to build trust and loyalty with customers without offering discounts and offers.
+4. Not having a physical business can make it harder to build trust and loyalty with customers without offering discounts and promotions.
 5. As the price point for the items is lower, the business would need to process a reasonable number of orders per day / week / month for the business to be viable.
 
-Taking the pros and cons of this business, a subscription model seems to be an unlikely viable model as it requires a customer base and some form of brand loyalty.
+Taking the pros and cons of this business, a subscription model seems to be an unlikely viable model initially as it requires a customer base and some form of brand loyalty.
 
-The best approach would be to provide products on a pay as you go traditional e-commerce format. As the business grows then the implementation of a subscription model would make more sense.
+The best approach would be to provide products on a pay as you go traditional e-commerce format. As the business grows then the implementation of a subscription model would make more sense allowing members to avail of increased discount levels.
 
 ---
 
@@ -124,8 +124,8 @@ The goals for the website are:
 The businesses marketing strategy going forward is:
 
 1. Promote the store through it's facebook business page. This can be viewed in the SEO section.
-2. Share the page with friends and family and ask them to like it and share the pafe to their wider circle.
-3. Have a soft online launce sale to encourage early adoption and purchases from prospective clients
+2. Share the page with friends and family and ask them to like it and share the path to their wider circle.
+3. Have a soft online launch sale to encourage early adoption and purchases from prospective clients
 4. Gain subscribers through the mailchimp option on the site and then send out offers and promotions to encourage repeat business
 5. Potentially use paid advertisement like google ads, facebook ads to promote to our target demographic.
 6. Set up multiple ads with a different product as the cover image, track the click through rate and stick with the high peformers.
@@ -188,9 +188,13 @@ In case the page becomes inactive or deactivated by Facebook I have taken screen
   <summary>Facebook Business Page Screenshots</summary>
   <br>
 
-![FB Business page overview](media/readme/facebook_business_page.png)
+![FB Business page overview](media/readme/facebook/facebook_page1.png)
 
-![FB Business page overview](media/readme/facebook_business_page_2.png)
+![FB Business page overview](media/readme/facebook/facebook_page2.png)
+
+![FB Business page overview](media/readme/facebook/facebook_page3.png)
+
+
 
 </details>
 
@@ -212,7 +216,7 @@ As I worked through the workload I moved stories from not started to in progress
 One of the sections in my project boards is called Nice to Have. This is usually for expanding the project beyond MVP and adding additional features to enhance user experience.
 
 ### Github Project Board
-To see the final project board for Razor Sharp you can click the link below:
+To see the final project board for Fairway Finds you can click the link below:
 [Fairway Finds Project Board](https://github.com/users/PatrickG0308/projects/15)
 
 
@@ -247,19 +251,19 @@ These remain unfinished and can also be viewed from the project board. This woul
 
 The Desktop navigation was based on Boutique Ado and seemed like a concise and clear option for an e-commerce store. 
 
-![Navbar Desktop](media/readme/navbar_desktop.png)
+![Navbar Desktop](media/readme/navigation/navbar_desktop.png)
 
 Mobile Navigation
   
-![Navbar Mobile](media/readme/navbar_mobile.png)
+![Navbar Mobile](media/readme/navigation/navbar_mobile.png)
 
 Mobile Navigation - Expanded
 
-![Mobile Navbar Expanded](media/readme/navbar_mobile_expanded.png)
+![Mobile Navbar Expanded](media/readme/navigation/navbar_mobile_expanded.png)
   
 When developing this application I decided I wanted to add a detailed footer as would be found on most e-commerce websites.
 
-![Footer](media/readme/footer.png)
+![Footer](media/readme/navigation/footer.png)
 
 </details>
 
@@ -271,23 +275,23 @@ The authentication flows come from Allauth and have been styled to fit the theme
 
 Registration Page
 
-![Sign Up](media/readme/signup.png)
+![Sign Up](media/readme/authentication/signup.png)
 
 Verification Email Sent
 
-![Verification Email sent](media/readme/verify_reg_email.png)
+![Verification Email sent](media/readme/authentication/verify_reg_email.png)
 
 Verification Email recieved by customer
 
-![Verification Email received](media/readme/verify_reg_email_received.png)
+![Verification Email received](media/readme/authentication/verify_reg_email_received.png)
 
 Verification Confirmation 
 
-![Verification Confirmation](media/readme/verify_confirm.png)
+![Verification Confirmation](media/readme/authentication/verify_confirm.png)
 
 Sign In Page
 
-![Login](media/readme/sign-in.png)
+![Login](media/readme/authentication/sign-in.png)
 
 </details>
 
@@ -298,33 +302,33 @@ Sign In Page
 The products page is responsive to allow equal spacing between products regardless of screen width.
   
   
-![Products Page](media/readme/products_page.png)
+![Products Page](media/readme/products/products_page.png)
 
 
-![Products Details](media/readme/product_details.png)
+![Products Details](media/readme/products/products_details.png)
 
 </details>
 
 <details>
-<summary> Cart & Checkout Flow </summary>
+<summary> Bag & Checkout Flow </summary>
 <br>
 
 Add Products to Bag
 
-![Cart Page](media/readme/add_to_bag.png)
+![Cart Page](media/readme/checkout/add_to_bag.png)
 
 Add checkout page a customer who has not signed is allowed to purchase the product once information form has been completed
 and correct payment details entered. A logged in user would have their information pre populated from their profile information.
 
-![Checkout Page](media/readme/checkout_page.png)
+![Checkout Page](media/readme/checkout/checkout_page.png)
 
-![Checkout Page End](media/readme/checkout_page_bottom.png)
+![Checkout Page End](media/readme/checkout/checkout_page_bottom.png)
 
 Once the customer makes a successful payment they are redirected to the payment success page where they see a summary of their order. 
 
-![Payment Success Page](media/readme/payment_success_page.png)
+![Payment Success Page](media/readme/checkout/payment_success_page.png)
 
-![Payment Success Message](media/readme/payment_success_message.png)
+![Payment Success Message](media/readme/checkout/payment_success_message.png)
   
 
 
@@ -338,13 +342,13 @@ Once the customer makes a successful payment they are redirected to the payment 
 The account profiles app was designed to make it easy for customers to carry out some basic post order options
 such as update their account information with correct address or email information.
 
-![Accounts](media/readme/profile_page.png)
+![Accounts](media/readme/profile/profile_page.png)
 
 The customer can visit their order confirmation by clicking on the order number in the order history page. Once directed to this page they will be notified by a pop up message that this is displaying a previous order and not a new one.
   
 The customer can return to the profile by clicking on the button below the order form.
 
-![Order History](media/readme/order_history.png)
+![Order History](media/readme/profile/order_history.png)
 
 </details>
 
@@ -352,13 +356,13 @@ The customer can return to the profile by clicking on the button below the order
 <summary> About </summary>
 <br>
 
-The About Us page outlines the online stores vision and inspriation to allow customers to get a feel for the value and quality of our products.  
+The About Us page outlines the online stores vision and inspriation to allow customers to get a feel for the value and quality of our products and service.  
 
-![About Us Page](media/readme/about_us.png)
+![About Us Page](media/readme/about/about_us.png)
 
 FAQ's pages answers to basic commonly asked questions about our products and what we do.
 
-![FAQ's](media/readme/faqs.png)
+![FAQ's](media/readme/about/faqs.png)
   
 </details>
 
@@ -369,19 +373,19 @@ FAQ's pages answers to basic commonly asked questions about our products and wha
 The feedback form is to provide customers the oppurtunity to comment on the quality of the products and service offered.
 This option is only available to authenticated customers, customers are allowed to add, edit, and delete their feedback. 
 
-![Feedback Page](media/readme/feedback_home.png)
+![Feedback Page](media/readme/feedback/feedback_home.png)
 
 Feedback Add 
 
-![Feedback Page](media/readme/feedback_add.png)
+![Feedback Page](media/readme/feedback/feedback_add.png)
 
 Feedback Edit
 
-![Feedback Page](media/readme/feedback_edit.png)
+![Feedback Page](media/readme/feedback/feedback_edit.png)
 
 Feedback Delete
 
-![Feedback Page](media/readme/feedback_delete.png)
+![Feedback Page](media/readme/feedback/feedback_delete.png)
 
   
 </details>
@@ -396,11 +400,11 @@ with the e-mail provided in the customers profile.
 
 Contact form with the auto populated email
 
-![Contact Form](media/readme/contact.png)
+![Contact Form](media/readme/contact/contact.png)
 
 Enquiry types offered to customers.
 
-![Contact form Dropdown](media/readme/contact_type.png)
+![Contact form Dropdown](media/readme/contact/contact_type.png)
 
 </details>
 
@@ -413,38 +417,38 @@ When a user signs in or out they see a notification like the below to indicate t
 
 Sign in notify
 
-![Sign-in Notification](media/readme/sign_in_notify.png)
+![Sign-in Notification](media/readme/notification/signed_in_notify.png)
 
 Sign out notify
 
-![Sign-in Notification](media/readme/sign_out_notify.png)
+![Sign-in Notification](media/readme/notification/signed_out_notify.png)
 
 If a user navigates to their account profile and selects an order number they are imformed that they are looking 
 at a past order.
 
-![Order History Notification](media/readme/past_order.png)
+![Order History Notification](media/readme/notification/past_order.png)
 
 When a user adds an item to cart they see the below notification.
   
-![Add to bag notification](media/readme/add_to_bag_notify.png)
+![Add to bag notification](media/readme/notification/add_to_bag_notify.png)
 
 When a user removes\updates an item in the cart they see the below notifications.
   
-![Update bag notification](media/readme/update_product_notify.png)
+![Update bag notification](media/readme/notification/update_product_notify.png)
 
-![Remove from bag notification](media/readme/remove_product_notify.png)
+![Remove from bag notification](media/readme/notification/remove_product_notify.png)
 
 When a user updates their profile information
 
-![Update profile notification](media/readme/profile_updated.png)
+![Update profile notification](media/readme/notification/profile_updated.png)
 
 When a user completes a successful order
 
-![Successful Order notification](media/readme/order_success_notify.png)
+![Successful Order notification](media/readme/notification/order_success_notify.png)
 
 When a user successfully submits feedback
 
-![Feedback submit notification](media/readme/feedback_add_notify.png)
+![Feedback submit notification](media/readme/notification/feedback_add_notify.png)
 
 
 </details>
@@ -456,17 +460,17 @@ When a user successfully submits feedback
 When the superuser logs into the account they have additional front end permissions to edit, delete and add products to the website.
 The edit option and delete options are available on the products page and the add product option is on the product management page on the my account dropdown.
 
-![Admin Product Permissions](media/readme/product_admin.png)
+![Admin Product Permissions](media/readme/admin/product_admin.png)
 
-![Admin Product Add Form](media/readme/product_add_admin.png)
+![Admin Product Add Form](media/readme/admin/product_add_admin.png)
 
 Superusers can also view all orders received
 
-![Admin View Orders](media/readme/order_view_admin.png)
+![Admin View Orders](media/readme/admin/order_view_admin.png)
 
 Superusers can also view any contacts made by customers and respond.
 
-![Admin View Contacts](media/readme/contact_view_admin.png)
+![Admin View Contacts](media/readme/admin/contact_view_admin.png)
 
 </details>
 
@@ -825,7 +829,7 @@ Please see a table of acronyms used throughout testing:
   <summary>W3 HTML Validation Screenshot</summary>
     </br>
 
-![W3 HTML Validation](media/readme/w3-html-validator.png)
+![W3 HTML Validation](media/readme/validation/w3_html.png)
   
   </details>
   
@@ -837,7 +841,7 @@ Please see a table of acronyms used throughout testing:
   <summary>W3 CSS Jigsaw Screenshot</summary>
   </br>
   
-![w3 Jigsaw CSS checker](media/readme/w3-css-jigsaw.png)
+![w3 Jigsaw CSS checker](media/readme/validation/w3_css.png)
 
 </details>
 
@@ -858,11 +862,8 @@ Please see a table of acronyms used throughout testing:
 
 | Bug |Outcome  |
 |--|--|
-|[User getting 404 when trying to change address](https://github.com/Alan-Bushell/razor-sharp/issues/56)| Resolved |
-|[Incorrect logo showing on mobile](https://github.com/Alan-Bushell/razor-sharp/issues/58)| Resolved |
-|[My account not showing on mobile](https://github.com/Alan-Bushell/razor-sharp/issues/59)|Resolved|
-|[Profile image in navbar causing errors for new users](https://github.com/Alan-Bushell/razor-sharp/issues/57)|Not Resolved|
-|[Emails not sending in deployment](https://github.com/Alan-Bushell/razor-sharp/issues/62)|Not Resolved|
+|[E-mail notifications not working](https://github.com/PatrickG0308/PP5-FairwayFinds/issues/37)| Resolved |
+|[Order confirmation not sending email ](https://github.com/PatrickG0308/PP5-FairwayFinds/issues/36)| Resolved |
 
 </details>
 
@@ -885,7 +886,7 @@ This application is deployed with Heroku.
 1.  Visit Heroku and login
 2.  Click on New and then choose New App.
 3.  Choose a name for your app and then choose your region.
-4. Ideally select the region closest to you
+4.  Ideally select the region closest to you
 5.  Then press 'Create app'.
   
 </details>
@@ -900,8 +901,8 @@ This application is deployed with Heroku.
 3. Choose a name and plan. Then click on select region. 
 4. Select the closest Data Center to you
 5. Click on "Create Instance".
-6.  Go back to the start page and click on your new database.
-7.  Copy the URL for the database.
+6. Go back to the start page and click on your new database.
+7. Copy the URL for the database.
   
  </details>
 
@@ -910,7 +911,7 @@ Go back to Heroku and click on the settings tab of your application.
     
 Click on "Reveal config vars".
 
-Add a new config var named DATABASE_URL and paste in the URL from  ElephantSQL  as the value.
+Add a new config var named DATABASE_URL and paste in the URL from ElephantSQL as the value.
 
 Go back to Gitpod or the IDE you are using and install two more requirements for the database:
 
@@ -986,7 +987,7 @@ Click on open app at the top of the page to view your deployed app.
 6.  Type  `git clone`  and then paste the URL that you copied.
 7.  Press enter and clone is complete.
 8.  In the terminal install the requirements by using the following: pip3 install -r requirements.txt
-9. Next create the env.py file which tells our project which variables to use.  
+9.  Next create the env.py file which tells our project which variables to use.  
 10. Add the file to a .gitignore to prevent it from being pushed to github
 11. Make migrations by running :  `python manage.py makemigrations`
 12. Then migrate those changes with  `python manage.py migrate`
@@ -1001,7 +1002,7 @@ Click on open app at the top of the page to view your deployed app.
 
 The steps to fork this repository are:
 
- 1. Login to github and find the respitory  [here](https://github.com/Alan-Bushell/razor-sharp)
+ 1. Login to github and find the respitory  [here](https://github.com/PatrickG0308/PP5-FairwayFinds)
  2. Under your profile photo on the right hand side you will see the fork button.
  3. Click the fork button and github will create a copy to your account.
 
@@ -1013,17 +1014,8 @@ The steps to fork this repository are:
 <a name="credits"></a>
 ## Credits
 
-##### Rathan Kumar
-  - Prior to starting this project I went through Rathan's course on building a django e-commerce store and combined the knowledge learned through the code institute and rathan to implement my own creation as best as I could. 
-  - Rathan does really well to cover off correctly extending the user model through the django documentation and filled in some knowledge gaps I had. 
-
 ##### Chat GPT
-  - For this project I had personally written 3-4 blog articles focusing on SEO and related to the niche of this project.
-  - However once I deployed the project my articles were lost for some reason.
-  - To save time and also to try out some AI resources I have used ChatGPT to write my blog articles. 
-  - These articles were not written by myself.
-  - I provided the title of the article and instructed the AI application to write a blog related post for a mens e-commerce store.
-  - The final articles were off and requires some tweeking to make sense and then were formatted for this site.
+  - Great resource to help point you in the right direction to resolving issues
 
 ##### Remove.bg
   - Used remove.bg to remove the background on the amiresponsive.png as i felt the original black background didn't work with the readme layout.
@@ -1042,24 +1034,14 @@ The steps to fork this repository are:
 ##### W3 Schools
   - Used for reference throughout for simple css examples.
 
-##### Canva
-  - Used to create the logo used for the facebook business page and favicon
-
 ##### Favicon.ico
-  - Used to create the favicon from the logo
+  - Used to create the favicon and the logo for the Facebook Business page
   
 ##### Code Institute
   - Course content for portfolio project 5 helped greatly in being able to complete this project.
   - I found the walkthroughs informative and well paced.
   - Initial structure based heavily on the CI walkthrough until I got more comfortable with the framework and started to make it my own.
   - Some legacy code regarding nav remains.
-
-##### Dennis Ivy
-  - Dennis has a great video series on Youtube that covers off how to build an e-commerce platform with django from scratch.
-  - He provides good bitesize lessons that give a different perspective on building a django e-commerce store.
-
-##### Geek4Geeks
-  - Really good resource for tutorials and guides relating to all forms of programming. Really helpful for templating or sythax reference.
 
 [Back to Top of page](#contents)
 
@@ -1068,12 +1050,12 @@ The steps to fork this repository are:
 <a name="acknowlegements"></a>
 ## Acknowledgements
 
-### Dick Vlandeeren
+### Daisy Mc Girr
 > My mentor who provided me with constructive feedback and guidance throughout.
 
 ### The CI tutor support team
 > The Tutor support team in the Code Institute were always on hand to answer any queries or questions if things got too clouded.
-> I found myself needing to speak with them less and less over the course and have contacted them over 50% less than project 4 alone.
 > Regardless I do appreciate their guidance and support.
+> Legends one and all.
 
 [Back to Top of page](#contents)
