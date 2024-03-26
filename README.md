@@ -366,23 +366,41 @@ FAQ's pages answers to basic commonly asked questions about our products and wha
 <summary> Feedback </summary>
 <br>
 
-![Contact Form](media/readme/contact-form.png)
+The feedback form is to provide customers the oppurtunity to comment on the quality of the products and service offered.
+This option is only available to authenticated customers, customers are allowed to add, edit, and delete their feedback. 
+
+![Feedback Page](media/readme/feedback_home.png)
+
+Feedback Add 
+
+![Feedback Page](media/readme/feedback_add.png)
+
+Feedback Edit
+
+![Feedback Page](media/readme/feedback_edit.png)
+
+Feedback Delete
+
+![Feedback Page](media/readme/feedback_delete.png)
+
   
-The contact form was designed to be a model that sends the message to the backend of the website. In the future I will enable email notifications to the business email address and filter them depending on contact reason. For example if the query selected is complaint then the email will be forwarded to the complaints email address the ensure swift response from the correct employee of the business.
-
-![Contact form Dropdown](media/readme/contact-form-dropdown.png)
-
 </details>
 
 <details>
 <summary> Contact Page </summary>
 <br>
 
-![Contact Form](media/readme/contact-form.png)
-  
-The contact form was designed to be a model that sends the message to the backend of the website. In the future I will enable email notifications to the business email address and filter them depending on contact reason. For example if the query selected is complaint then the email will be forwarded to the complaints email address the ensure swift response from the correct employee of the business.
+The contact form offers customers a medium to contact the site owner directly. It offers a choice of what type of enquiry
+it is related to through a dropdown menu option. If customer is authenticated the E-Mail field is automatically populated 
+with the e-mail provided in the customers profile.
 
-![Contact form Dropdown](media/readme/contact-form-dropdown.png)
+Contact form with the auto populated email
+
+![Contact Form](media/readme/contact.png)
+
+Enquiry types offered to customers.
+
+![Contact form Dropdown](media/readme/contact_type.png)
 
 </details>
 
@@ -393,15 +411,41 @@ The contact form was designed to be a model that sends the message to the backen
 
 When a user signs in or out they see a notification like the below to indicate this with the relevant action just taken.
 
-![Sign-in Notification](media/readme/sign-in-notification.png)
+Sign in notify
 
-If a user navigates from their account profile to the below they are notified as it is reusing the same payment confirmation page once the user makes an order and pays.
+![Sign-in Notification](media/readme/sign_in_notify.png)
 
-![Order History Notification](media/readme/order-history-notification.png)
+Sign out notify
+
+![Sign-in Notification](media/readme/sign_out_notify.png)
+
+If a user navigates to their account profile and selects an order number they are imformed that they are looking 
+at a past order.
+
+![Order History Notification](media/readme/past_order.png)
 
 When a user adds an item to cart they see the below notification.
   
-![Add to cart notification](media/readme/add-cart-notification.png)
+![Add to bag notification](media/readme/add_to_bag_notify.png)
+
+When a user removes\updates an item in the cart they see the below notifications.
+  
+![Update bag notification](media/readme/update_product_notify.png)
+
+![Remove from bag notification](media/readme/remove_product_notify.png)
+
+When a user updates their profile information
+
+![Update profile notification](media/readme/profile_updated.png)
+
+When a user completes a successful order
+
+![Successful Order notification](media/readme/order_success_notify.png)
+
+When a user successfully submits feedback
+
+![Feedback submit notification](media/readme/feedback_add_notify.png)
+
 
 </details>
 
@@ -412,28 +456,17 @@ When a user adds an item to cart they see the below notification.
 When the superuser logs into the account they have additional front end permissions to edit, delete and add products to the website.
 The edit option and delete options are available on the products page and the add product option is on the product management page on the my account dropdown.
 
-![Admin Product Permissions](media/readme/admin-product-permissions.png)
+![Admin Product Permissions](media/readme/product_admin.png)
 
-![Admin Product Add Form](media/readme/admin-product-add-form.png)
+![Admin Product Add Form](media/readme/product_add_admin.png)
 
-</details>
+Superusers can also view all orders received
 
+![Admin View Orders](media/readme/order_view_admin.png)
 
-<details>
-<summary> Additional Pages </summary>
-<br>
+Superusers can also view any contacts made by customers and respond.
 
-To ensure the page reflects that of a genuine e-commerce page I wanted to include shipping policy's and FAQ's to ensure customers common queries are available.
-  
-![Shipping Policy](media/readme/shipping-policy.png)
-
-![FAQ's](media/readme/sample-faqs.png)
-  
-I have included a subscribe option for customer to provide their emails to be added to mailing lists for offers tips and tricks. This service is provided by mailchimp.
-  
-Initially I was considering creating a subscribe model and attaching it to the userprofile model so they can subscribe and unsub at their leisure but due to time constrainst i decided to go with mailchimp.
-
-![Subscribe](media/readme/subscribe.png)
+![Admin View Contacts](media/readme/contact_view_admin.png)
 
 </details>
 
@@ -455,12 +488,8 @@ For the short term and to prevent spam, when a non logged in user trys to access
 #### Subscriptions
 My intention for this project was to implement subscriptions but due to time constraints it became unrealistic to implement them effectively. This will be one of the first options I intend to include upon developing this project further.
 
-#### User interaction features
-Features including allowing users to reply directly to each other through blog articles, possible even add threads that users can generate themselves to increase and develop a community.
-I would also like to add a notification system for users to be able to see replys, likes in a bell icon from their account.
-
 #### Frequently Bought Items
-In future iterations I would implement a Frequently added products section that would present itself on the initial cart page before checkout to help drive upsells.
+In future iterations I would implement a Frequently added products section that would present itself on the initial bag page before checkout to help drive upsells.
 
 #### Product Reviews
 At present the products have a fixed rating set by the site admin which is not a true reflection of customer satisfaction. In the next iteration customers would be able to leave reviews on products they have successfully purchased once they are logged in. I will then calculate the average and return a star rating based on the float figure.
@@ -470,7 +499,7 @@ This is a basic feature to prevent bot spam messages and while it is not 100% ef
 This works as a hidden input value on the form that the front end user cannot click. However bots can and generally do. If the option is ticked the submitted form is either not forwarded to staff or the form is disabled completely.
 
 #### E-mail forwarding for all site actions.
-As I have a dropdown model for the contact form, depending on the size of the business I would like to forward the emails to specific email addresses monitored by different staff departments. For example the complaints emails go to the complaints teams to ensure quick responses and reduce friction.
+As I have a dropdown model for the contact form, depending on the size of the business I would like to forward the emails to specific email addresses monitored by different staff departments. 
 
 #### Order Tracking
 Going forward I would like to add an order tracking system for the user profile section. Once order placed the merchant can move the product to dispatched and add tracking that can then be viewed by the customer from within their account and also receive an email with the updates.
@@ -492,7 +521,7 @@ These would allow the business to track orders over days, months and year on yea
 
 ### CSS
 
- - Custom CSS was written on large chunks of this site to make it as close to the wireframes as I felt it needed to be.
+ - Custom CSS was written on large chunks of this site.
 
 ### JavaScript
 
@@ -506,6 +535,10 @@ These would allow the business to track orders over days, months and year on yea
 
  -  Framework used to build this project. Provides a ready installed admin panel and includes many helper template tags that make writing code quick and efficient.
 
+### Django-AllAuth
+
+ -  Authentication framework for project
+
 ### Font Awesome
 
  -  Icon library used
@@ -513,16 +546,13 @@ These would allow the business to track orders over days, months and year on yea
 ### Bootstrap 4
  - Used as the base front end framework to work alongside Django
 
-### Jinja Templating with Django
- - Used to render logic within html documents and make the website more dynamic.
-
 ### GitHub
  - Used to store the code for this project & for the projects Kanban board used to complete it.
 
 ### Heroku
  - Used to host and deploy this project
 
-### Heroku PostgreSQL
+### ElephantSQL
  - Heroku PostgreSQL was used as the database for this project during development and in production.
 
 ### Git
@@ -568,7 +598,7 @@ Please see a table of acronyms used throughout testing:
 |User can log out of account|Pass|
 |User is notified of logging in to account|Pass|
 |User is notified of logging out of account|Pass|
-|User receives email verification email|Fail|
+|User receives email verification email|Pass|
 
 </details>
 
@@ -582,16 +612,16 @@ Please see a table of acronyms used throughout testing:
 |--|--|
 |User can navigate to product| Pass |
 |User can access product details| Pass|
-|User can add a product to cart|Pass|
+|User can add a product to bag|Pass|
 |User can navigate back to products|Pass|
 |User can add additional products to cart|Pass|
 |User can add multiple quantities of a product |Pass|
-|User can navigate to cart|Pass|
+|User can navigate to bag|Pass|
 |Logged in User can navigate to the profile section of accounts|Pass|
 |User can access their saved address information|Pass|
 |User can access past orders|Pass|
-|User can access the blog section of the page|Pass|
-|User can access specific blogs|Pass|
+|User can access the feedback section of the page|Pass|
+|User can access their own feedback|Pass|
 |User can access the contact page and form|Pass|
 |All links on footer open to correct pages|Pass|
 |All links on Heading Navigation open to correct option|Pass|
@@ -606,17 +636,15 @@ Please see a table of acronyms used throughout testing:
 
 | Test |Result  |
 |--|--|
-|NLI cannot make reservation | Pass |
 |NLI cannot access profile page| Pass|
 |NLI cannot access admin panel|Pass|
 |NLI cannot access products management|Pass|
-|NLI cannot access the contact form page|Pass|
-|NLI cannot leave comments on blog|Pass|
+|NLI cannot leave comments on feedback|Pass|
 |LIU cannot access admin panel|Pass|
 |LIU cannot access products management|Pass|
 |LIU can access the contact form page|Pass|
 |LIU cannot edit products|Pass|
-|LIU can leave comments on blog articles|Pass|
+|LIU can leave comments on feedback page|Pass|
 
 </details>
 
@@ -635,22 +663,11 @@ Please see a table of acronyms used throughout testing:
 |LIU can update their last name|Pass|
 |LIU can update their email|Pass|
 |LIU can update their phone number|Pass|
-|LIU can navigate to their shipping information|Pass|
 |LIU can update street address 1 and 2|Pass|
 |LIU can update town or city|Pass|
 |LIU can update county|Pass|
 |LIU can update postcode|Pass|
 |LIU can update country|Pass|
-|LIU can navigate to change profile image page|Pass|
-|LIU who does not have a personal image has the default image|Pass|
-|LIU can add an image to their profile|Pass|
-|LIU can change their profile image once they have one set |Pass|
-|LIU can remove a personal image entirely |Pass|
-|LIU can select delete account|Pass|
-| Pop-up modal prompts the user to confirm account deletion before closing account |Pass|
-|LIU can close account successfully |Pass|
-|When user closes their account they are redirected to the home page|Pass|
-|When user closes account they receive a pop up notification advising them the account is closed|Pass|
 
 </details>
 
@@ -666,7 +683,9 @@ Please see a table of acronyms used throughout testing:
 |SUP can access add product page from my account dropdown|Pass|
 |SUP can see the edit product option on the products page|Pass|
 |SUP can see the delete option on the products page|Pass|
-|SUP can write blogs from the admin panel and publish them|Pass|
+|SUP can view contacts|Pass|
+|SUP can view or delete feedback|Pass|
+|SUP can add,delete,edit FAQ's|Pass|
 |SUP can edit products and update all fields successfully|Pass|
 |SUP can delete products from the products page|Pass|
 
@@ -680,15 +699,19 @@ Please see a table of acronyms used throughout testing:
 
 | Test |Result  |
 |--|--|
-|NLI cannot access contact page| Pass |
-|LIU can submit contact form to business|Pass|
-|SUP can view submitted forms from the admin panel|Pass|
-|LIU receives notification the form has been submitted|Pass|
+|NLI cannot access feedback page| Pass |
+|LIU can submit feedback form to business|Pass|
+|SUP can view submitted feedback forms from the admin panel|Pass|
+|LIU receives notification the feedback form has been submitted|Pass|
+|NLI can access contact page| Pass |
+|NLI can submit contact form to business|Pass|
+|SUP can view submitted contact forms from the admin panel|Pass|
+|Site logo brings user back to home page|Pass|
+|Site links in footer open up to the correct pages|Pass|
 |User can navigate to privacy policy|Pass|
-|User can navigate to shipping policy|Pass|
-|User can navigate to terms of use page|Pass|
 |Social links open up to the correct pages|Pass|
 |Social links open up in a new tab|Pass|
+
 
 </details>
 
