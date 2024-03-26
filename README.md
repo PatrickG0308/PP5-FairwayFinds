@@ -550,6 +550,9 @@ These would allow the business to track orders over days, months and year on yea
 ### Bootstrap 4
  - Used as the base front end framework to work alongside Django
 
+### Gitpod
+ - Online IDE used for the development portion of this project
+
 ### GitHub
  - Used to store the code for this project & for the projects Kanban board used to complete it.
 
@@ -689,7 +692,7 @@ Please see a table of acronyms used throughout testing:
 |SUP can see the delete option on the products page|Pass|
 |SUP can view contacts|Pass|
 |SUP can view or delete feedback|Pass|
-|SUP can add,delete,edit FAQ's|Pass|
+|SUP can add, delete, edit FAQ's|Pass|
 |SUP can edit products and update all fields successfully|Pass|
 |SUP can delete products from the products page|Pass|
 
