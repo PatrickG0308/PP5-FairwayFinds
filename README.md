@@ -450,6 +450,10 @@ When a user successfully submits feedback
 
 ![Feedback submit notification](media/readme/notification/feedback_add_notify.png)
 
+When a user successfully subscribes to mailchimp
+
+![Mailchimp submit notification](media/readme/notification/mailchimp_notify.png)
+
 
 </details>
 
@@ -473,6 +477,23 @@ Superusers can also view any contacts made by customers and respond.
 ![Admin View Contacts](media/readme/admin/contact_view_admin.png)
 
 </details>
+
+<details>
+<summary> Error Pages </summary>
+<br>
+
+Custom Error Pages were created to give the user more information on the error and to guide them back to the site
+
+![Admin Product Permissions](media/readme/error/error_404.png)
+
+- 400 Bad Request - Fairway Finds is unable to handle this request.
+- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
+- 404 Page Not Found - The page you're looking for doesn't exist.
+- 500 Server Error - Due to an internal error we are unable to process this request.
+
+</details>
+
+
 
 
 #### Account restrictions:
@@ -752,6 +773,8 @@ Please see a table of acronyms used throughout testing:
 |LIU can delete their feedback|Pass|
   
 </details>
+
+---
 
 <details>
 <summary>Contact Tests</summary>
