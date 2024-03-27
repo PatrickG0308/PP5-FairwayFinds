@@ -445,9 +445,11 @@ input[name='q']::placeholder {
 }
 
 /*--- footer --*/
+
 .feedback {
     margin-bottom: 300px;
 }
+
 .footer {
     position: relative;
     bottom: 0;

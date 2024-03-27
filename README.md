@@ -52,15 +52,87 @@ This was the suspected preproject planning database structure. As the project wa
 ### Wireframes
 
 <details>
-<summary> Wireframes </summary>
+<summary> Home Page </summary>
 <br>
 
-![Wireframe Index](media/readme/wireframe-index.png)
+![Home Page](media/readme/wireframes/fairway_finds_home.png)
 
-![Wireframe Mobile](media/readme/wireframe-mobile.png)
-
-![Wireframe Products](media/readme/wireframe-products.png)
 </details>
+
+<details>
+<summary> Products </summary>
+<br>
+
+![Product Page](media/readme/wireframes/fairway_finds_products.png)
+
+</details>
+
+<details>
+<summary> Product Detail </summary>
+<br>
+
+![Product Detail Page](media/readme/wireframes/fairway_finds_product_detail.png)
+
+</details>
+
+<details>
+<summary> About Us </summary>
+<br>
+
+![About Us Page](media/readme/wireframes/fairway_finds_about.png)
+
+</details>
+
+<details>
+<summary> FAQs </summary>
+<br>
+
+![FAQ Page](media/readme/wireframes/fairway_finds_faq.png)
+
+</details>
+
+<details>
+<summary> Feedback </summary>
+<br>
+
+![Feedback Page](media/readme/wireframes/fairway_finds_feedback.png)
+
+</details>
+
+<details>
+<summary> Contact </summary>
+<br>
+
+![Contact Page](media/readme/wireframes/fairway_finds_contact.png)
+
+</details>
+
+<details>
+<summary> Bag </summary>
+<br>
+
+![Bag Page](media/readme/wireframes/fairway_finds_bag.png)
+
+</details>
+
+<details>
+<summary> Checkout </summary>
+<br>
+
+![Checkout Page](media/readme/wireframes/fairway_finds_checkout.png)
+
+</details>
+
+<details>
+<summary> Complete Order </summary>
+<br>
+
+![Complete Order Page](media/readme/wireframes/fairway_finds_complete_order.png)
+
+</details>
+
+
+
 
 [Back to Top of page](#contents)
 
