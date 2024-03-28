@@ -931,7 +931,7 @@ Please see a table of acronyms used throughout testing:
   
   </details>
   
-#### Result: No Errors
+#### Result: No Errors on all HTML files
 
 ### CSS Validation
 
@@ -962,6 +962,7 @@ Please see a table of acronyms used throughout testing:
 |--|--|
 |[E-mail notifications not working](https://github.com/PatrickG0308/PP5-FairwayFinds/issues/37)| Resolved |
 |[Order confirmation not sending email ](https://github.com/PatrickG0308/PP5-FairwayFinds/issues/36)| Resolved |
+|[MailChimp Console Error - Inspect ](https://github.com/PatrickG0308/PP5-FairwayFinds/issues/38)| Unresolved |
 
 </details>
 

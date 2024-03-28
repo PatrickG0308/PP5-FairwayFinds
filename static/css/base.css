@@ -275,7 +275,7 @@ input[name='q']::placeholder {
     display: inline-block;
     position: relative;
     margin: 140px 90px 205px 90px;
-    box-shadow: 0 10px 0 0 #ed8500 inset;
+    box-shadow: 0 10px 0 0 black inset;
     background-color: #fff;
     color: #000;
     max-width: 900px;
@@ -378,7 +378,7 @@ input[name='q']::placeholder {
 .faq-ul li i:after {
     content: "";
     position: absolute;
-    background-color: #ed8500;
+    background-color: black;
     width: 3px;
     height: 9px;
 }
