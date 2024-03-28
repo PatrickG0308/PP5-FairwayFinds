@@ -5,7 +5,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Feedback
 from django.urls import reverse_lazy
 from .forms import FeedbackForm
-from django.shortcuts import get_object_or_404
 
 
 class FeedbackList(generic.ListView):

@@ -956,7 +956,7 @@ Please see a table of acronyms used throughout testing:
 <summary>Bugs</summary>
 <br>
 
-> Please click on the bugs below to see causes, solutions or reason why issue is not resolved
+> Please click on the bugs below to see causes, solutions.
 
 | Bug |Outcome  |
 |--|--|
@@ -1152,7 +1152,7 @@ The steps to fork this repository are:
 > My mentor who provided me with constructive feedback and guidance throughout.
 
 ### The CI tutor support team
-> The Tutor support team in the Code Institute were always on hand to answer any queries or questions if things got too clouded.
+> The Tutor support team in the Code Institute were always on hand to answer any queries or questions when the road got rocky.
 > Regardless I do appreciate their guidance and support.
 > Legends one and all.
 
