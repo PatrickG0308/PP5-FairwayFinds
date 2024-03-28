@@ -323,6 +323,10 @@ These remain unfinished and can also be viewed from the project board. This woul
 
 The Desktop navigation was based on Boutique Ado and seemed like a concise and clear option for an e-commerce store. 
 
+
+[Epic: User Navigation](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/6)
+
+
 ![Navbar Desktop](media/readme/navigation/navbar_desktop.png)
 
 Mobile Navigation
@@ -343,7 +347,10 @@ When developing this application I decided I wanted to add a detailed footer as 
 <summary> Authentication </summary>
 <br>
 
-The authentication flows come from Allauth and have been styled to fit the theme of my website. At present when a user signs up a confirmation email is sent to their email address to confirm it before being able to access their account. 
+The authentication flows come from Allauth and have been styled to fit the theme of my website. At present when a user signs up a confirmation email is sent to their email address to confirm it before being able to access their account.
+
+[Epic: User Account and Profile](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/1)
+
 
 Registration Page
 
@@ -372,6 +379,8 @@ Sign In Page
 <br>
 
 The products page is responsive to allow equal spacing between products regardless of screen width.
+
+[Epic: Purchasing](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/3)
   
   
 ![Products Page](media/readme/products/products_page.png)
@@ -384,6 +393,8 @@ The products page is responsive to allow equal spacing between products regardle
 <details>
 <summary> Bag & Checkout Flow </summary>
 <br>
+
+[Epic: Purchasing](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/3)
 
 Add Products to Bag
 
@@ -414,6 +425,9 @@ Once the customer makes a successful payment they are redirected to the payment 
 The account profiles app was designed to make it easy for customers to carry out some basic post order options
 such as update their account information with correct address or email information.
 
+[Epic: User Account and Profile](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/1)
+
+
 ![Accounts](media/readme/profile/profile_page.png)
 
 The customer can visit their order confirmation by clicking on the order number in the order history page. Once directed to this page they will be notified by a pop up message that this is displaying a previous order and not a new one.
@@ -428,7 +442,9 @@ The customer can return to the profile by clicking on the button below the order
 <summary> About </summary>
 <br>
 
-The About Us page outlines the online stores vision and inspriation to allow customers to get a feel for the value and quality of our products and service.  
+The About Us page outlines the online stores vision and inspriation to allow customers to get a feel for the value and quality of our products and service.
+
+ [Epic: User Interaction](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/5)
 
 ![About Us Page](media/readme/about/about_us.png)
 
@@ -443,7 +459,9 @@ FAQ's pages answers to basic commonly asked questions about our products and wha
 <br>
 
 The feedback form is to provide customers the oppurtunity to comment on the quality of the products and service offered.
-This option is only available to authenticated customers, customers are allowed to add, edit, and delete their feedback. 
+This option is only available to authenticated customers, customers are allowed to add, edit, and delete their feedback.
+
+[Epic: User Interaction](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/5)
 
 ![Feedback Page](media/readme/feedback/feedback_home.png)
 
@@ -469,6 +487,8 @@ Feedback Delete
 The contact form offers customers a medium to contact the site owner directly. It offers a choice of what type of enquiry
 it is related to through a dropdown menu option. If customer is authenticated the E-Mail field is automatically populated 
 with the e-mail provided in the customers profile.
+
+[Epic: User Interaction](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/5)
 
 Contact form with the auto populated email
 
@@ -535,6 +555,8 @@ When a user successfully subscribes to mailchimp
 
 When the superuser logs into the account they have additional front end permissions to edit, delete and add products to the website.
 The edit option and delete options are available on the products page and the add product option is on the product management page on the my account dropdown.
+
+[Epic: Admin and Store Management](https://github.com/PatrickG0308/PP5-FairwayFinds/milestone/4)
 
 ![Admin Product Permissions](media/readme/admin/product_admin.png)
 
