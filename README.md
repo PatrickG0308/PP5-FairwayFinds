@@ -1151,6 +1151,9 @@ The steps to fork this repository are:
   
 ##### Django Documentation
   - Read through the django documentation multiple times when trying to implement models and other content.
+
+##### Code Institute - Boutique Ado Walkthrough Project
+  - [Boutique Ado Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
   
 ##### W3 Schools
   - Used for reference throughout for simple css examples.
